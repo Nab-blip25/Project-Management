@@ -1,0 +1,268 @@
+/* ---------------- */
+/* Palette Esigelec */
+/* ---------------- */
+
+:root {
+  --rouge_esig: #B5121B;
+  --grisfonce_esig: #333333;
+  --gris_esig: #5e5e5e;
+  --grisclair_esig: #F5F5F5;
+  --blanc_esig: #FFFFFF;
+  --accent_esig: #071097;
+  --noir_esig: #000000; 
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------- */
+/* Reset permettant de partir sur des bases communes pour le style */
+/* --------------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* -------------- */
+/* Styles globaux */
+/* -------------- */
+
+/* Corps de texte */
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background-color: var(--blanc_esig);
+  color: var(--grisfonce_esig);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Liens */
+a:hover {
+  color: var(--rouge_esig) !important;
+}
+
+/* Taille de police des liens dans la navbar */
+.navbar-nav .nav-link {
+  font-size: 1.5rem;
+}
+
+.navbar-brand {
+  padding-left: 5px;
+}
+
+/* Boutons */
+.btn-primary,
+.btn-outline-primary {
+  background-color: var(--rouge_esig);
+  border: 2px solid var(--rouge_esig);
+  color: var(--blanc_esig);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.modifierSujetBtn {
+  background-color: #FFC107;
+  border: 2px solid #FFC107;
+  color: var(--blanc_esig);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+/* Boutons hover */
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background-color: var(--accent_esig);
+  border-color: var(--accent_esig);
+}
+
+/* Titres */
+h1, h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--noir_esig);
+}
+
+/* Ligne horizontale */
+hr {
+  border-top: 3px solid var(--rouge_esig);
+  opacity: 0.9;
+  margin: 2rem 0;
+}
+
+/* Permet d'aligner les images en format portrait au centre */
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Images */
+img {
+  max-width: 400px;
+  max-height: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* ---- */
+/* Menu */
+/* ---- */
+
+/* Centrage vertical du switch dans le menu */
+#darkModeButton {
+  display: flex;
+  align-items: center;
+}
+
+/* Badge du nom de l'utilisateur */
+#userName {
+  font-size: 1.5rem; /* rem : unité relative à la taille de la police du navigateur */
+  padding: 10px 15px;
+  background-color: var(--rouge_esig);
+}
+
+/* Aligner le nom de l'utilisateur avec le reste de la navbar (en hauteur) */
+#userNameNavItem {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* --------- */
+/* Accordeon */
+/* --------- */
+
+/* Quand l'accordeon est ouvert, on met le fond en rouge */
+.accordion-button:not(.collapsed) {
+  background-color: var(--rouge_esig);
+  color: var(--blanc_esig);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* ------ */
+/* Footer */
+/* ------ */
+
+/* Footer */
+.footer-esig {
+  background-color: var(--grisclair_esig);
+  padding: 2rem 0;
+  margin-top: 3rem;
+  border-top: 3px solid var(--rouge_esig);
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+}
+
+/* Logos du footer */
+.footer-esig .footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Images des logos du footer */
+.footer-esig .footer-logos img {
+  height: 50px; /* Taille uniforme */
+  width: auto; /* Conserve les proportions */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Effet au survol des logos du footer */
+.footer-esig .footer-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* Texte du footer */
+.footer-esig p {
+  font-size: 0.9rem;
+  color: var(--grisfonce_esig);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------- */
+/* Badges details sujet dans accordeon */
+/* ----------------------------------- */
+
+.badgeNbEquipes {
+  font-weight: normal; /* Enlever le gras mis automatiquement par Bootstrap */
+  font-size: 1rem;
+  background-color: var(--rouge_esig);
+  margin-right: 10px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* ----------- */
+/* Mode sombre */
+/* ----------- */
+
+/* Corps de texte en mode sombre */
+body.dark-mode {
+  background-color: var(--noir_esig);
+  color: var(--blanc_esig);
+}
+
+/* Titres */
+.dark-mode h1,
+.dark-mode h2 {
+  color: var(--grisclair_esig);
+}
+
+/* Accordeon */
+.accordion-dark .accordion-button,
+.accordion-dark .accordion-body {
+  background-color: var(--grisfonce_esig);
+  color: var(--blanc_esig);
+}
+
+/* Permet d'inverser la couleur de la fleche de l'accordeon */
+.accordion-dark .accordion-button::after {
+  filter: invert(1);
+}
+
+/* Quand l'accordeon est ouvert, on met le fond en rouge */
+.accordion-dark .accordion-button:not(.collapsed) {
+  background-color: var(--rouge_esig);
+  color: var(--blanc_esig);
+}
+
+/* Footer */
+body.dark-mode .footer-esig {
+  background-color: #232323;
+  border-top-color: var(--accent_esig);
+}
+
+/* Texte du footer */
+body.dark-mode .footer-esig p {
+  color: var(--grisclair_esig);
+}
+
+/* Modal des details d'un sujet */
+.dark-mode #sujetsDetailsModal .modal-content {
+  background-color: var(--grisfonce_esig);
+  color: var(--blanc_esig);
+}
+
+/* Bouton de fermeture du modal des details d'un sujet */
+.dark-mode #sujetsDetailsModal .btn-close {
+  filter: invert(1);
+}

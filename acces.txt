@@ -1,0 +1,4 @@
+tuteur.tuteur@groupe-esigelec.org tuteur
+sansacces@groupe-esigelec.org sansacces
+responsable.responsable@groupe-esigelec.org responsable
+admin@groupe-esigelec.org admin
