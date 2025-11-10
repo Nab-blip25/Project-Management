@@ -1,6 +1,6 @@
-# PING — Project Subject Submission Site
+# PING - Project Subject Submission Site
 
-Simple web prototype to create and manage PING (Projet Ingénieur) subjects. Built as an Esigelec student project (2025). This repository is an archive of the school deliverable: it contains the site pages, basic backend scripts and design documents — some files (SQL migrations, assets or config) may be missing. Comments inside the code are written in French.
+Simple web prototype to create and manage PING (Projet Ingénieur) subjects. Built as an Esigelec student project (2025). This repository is an archive of the school deliverable: it contains the site pages, basic backend scripts and design documents - some files (SQL migrations, assets or config) may be missing. Comments inside the code are written in French.
 
 ---
 
